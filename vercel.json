@@ -2,7 +2,6 @@
     "buildCommand": "npm run build",
     "outputDirectory": "dist",
     "devCommand": "npm run dev",
-    "framework": "node",
     "rewrites": [
       { "source": "/(.*)", "destination": "/dist/index.js" }
     ]
