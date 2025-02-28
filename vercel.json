@@ -1,8 +1,14 @@
 {
-    "buildCommand": "npm run build",
-    "outputDirectory": "dist",
-    "devCommand": "npm run dev",
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/dist/index.js" }
+    "build" : [
+        {
+            "src" : "src/index.ts",
+            "use" : "@vercel/node"
+        }
+    ],
+    "routes" : [
+        {
+            "src" : "/(.*)",
+            "dest" : "src/index.ts"
+        }
     ]
-  }
+}
